@@ -81,3 +81,56 @@ let fullStatement = statement1 + statement2;
 
 //25.Use repeat() method to print 30 Days Of JavaScript 2 times
 console.log(challenge.repeat(2));
+
+
+
+//Exercise Level 2
+
+//1.Using console.log() print out the following statement:
+let quote = "The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.";
+console.log(quote);
+
+//2.Using console.log() print out the following quote by Mother Teresa:
+let quote_2 = `"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."`;
+console.log(quote_2);
+
+//3.Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+console.log(typeof('10') == typeof(10)); //False
+console.log(typeof(Number('10')) == typeof(10));  //True
+
+//4.Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+console.log(parseFloat(9.8) == 10); //False
+console.log(parseFloat(Math.round(9.8)) == 10); //True  // You can also use ceil to round up.
+
+//5.Check if 'on' is found in both python and jargon
+console.log("python".includes('on') && "jargon".includes('on')); // True
+
+//6.I hope this course is not full of jargon. Check if jargon is in the sentence.
+let someSentence = 'I hope this course is not full of jargon.'
+console.log(someSentence.includes('jargon')); //True
+
+//7. Generate a random number between 0 and 100 inclusively.
+let num = Math.floor(Math.random()*101);
+console.log(num);
+
+//8.Generate a random number between 50 and 100 inclusively.
+let minNum = 50;
+let maxNum = 100;
+let ranBtn = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+console.log(ranBtn);
+
+//9.Generate a random number between 0 and 255 inclusively.
+let num2 = Math.floor(Math.random()*255);
+console.log(num2);
+
+//10.Access the 'JavaScript' string characters using a random number.
+let course = `JavaScript`;
+let ranNum = Math.floor(Math.random() * course.length)-1;
+let courseChar = course[ranNum];
+console.log(courseChar);
+
+
+
+
+
+
