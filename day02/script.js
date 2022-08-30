@@ -72,7 +72,8 @@ console.log(challenge.startsWith('30 Days Of JavaScript'));
 console.log(challenge.endsWith('30 Days Of JavaScript'));
 
 //23.Use match() method to find all the a’s in 30 Days Of JavaScript
-console.log(challenge.match('a'));
+let pattern = /a/gi
+console.log(challenge.match(pattern));
 
 //24.Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
 let statement1 = '30 Days Of ';
@@ -125,9 +126,47 @@ console.log(num2);
 
 //10.Access the 'JavaScript' string characters using a random number.
 let course = `JavaScript`;
-let ranNum = Math.floor(Math.random() * course.length)-1;
+let ranNum = Math.floor(Math.random() * course.length - 1);
 let courseChar = course[ranNum];
 console.log(courseChar);
+
+//11.Use console.log() and escape characters to print the following pattern.
+let numbers = "1\t1\t1\t1\t1\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1\t5\t25\t125";
+console.log(numbers);
+
+//12.Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+let someStatement = 'You cannot end a sentence with because because because is a conjunction';
+console.log(someStatement.slice(someStatement.indexOf('because'),55));
+
+
+//Exercise Level 3
+
+//1.'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+let loveSentence = "'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence."
+
+let pattern_2 = /love/gi
+console.log(loveSentence.match(pattern_2));
+
+//2.Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+let becauseSentence = 'You cannot end a sentence with because because because is a conjunction';
+ let regEx = /because/gi;
+ 
+ console.log(becauseSentence.match(regEx));
+
+ //3.Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+ const sentence1 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+
+ let reg = /%/gi;
+ console.log(sentence1.replace(reg, ''))
+
+ //4.Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+ let incomeText = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+ let partt = /\d+/g
+ let salary = incomeText.match(partt);
+
+ total = Number(salary[0]) + Number(salary[1]) + Number(salary[2]);
+ console.log(total);
+
 
 
 
