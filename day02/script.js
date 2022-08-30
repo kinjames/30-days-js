@@ -21,7 +21,10 @@ console.log(challenge.toLocaleLowerCase());
 console.log(challenge.substring(0,3));
 
 //7.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
-console.log(challenge.substring(3,21)); 
+//To get this, we can find the last index of the sentence and also the index of the starting word
+console.log(challenge.length -1); //20
+console.log(challenge.indexOf('Day')) //3
+console.log(challenge.substring(3,20)); 
 
 //8.Check if the string contains a word Script using includes() method
 console.log(challenge.includes('Script')); 
@@ -161,8 +164,8 @@ let becauseSentence = 'You cannot end a sentence with because because because is
 
  //4.Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
  let incomeText = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
- let partt = /\d+/g
- let salary = incomeText.match(partt);
+ let incomeRegEx = /\d+/g
+ let salary = incomeText.match(incomeRegEx);
 
  total = Number(salary[0]) + Number(salary[1]) + Number(salary[2]);
  console.log(total);
