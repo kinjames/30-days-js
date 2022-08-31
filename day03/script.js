@@ -191,6 +191,22 @@ console.log(`${newDate.getDate()}-0${newDate.getMonth() + 1}-${newDate.getFullYe
 console.log(`${newDate.getDate()}/0${newDate.getMonth() + 1}/${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}`);
 
 //Exercise Level 3;
+//1.Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+//i. YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+let minutes = newDate.getMinutes();
+let hours = newDate.getHours();
+let months = newDate.getMonth() + 1;
+let days = newDate.getDate();
+let years = newDate.getFullYear();
+
+minutesResult = minutes < 10 ? `0${minutes}` : minutes;
+hoursResult = hours < 10 ? `0${hours}` : hours;
+monthsResult = months < 10 ? `0${months}` : months;
+daysResult = days < 10 ? `0${days}` : days;
+
+console.log(`${years}-${monthsResult}-${daysResult} ${hoursResult}:${minutesResult}`);
+
+
 
 
 
