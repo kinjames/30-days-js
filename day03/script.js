@@ -188,7 +188,10 @@ console.log(`${newDate.getFullYear()}-0${newDate.getMonth() + 1}-${newDate.getDa
 console.log(`${newDate.getDate()}-0${newDate.getMonth() + 1}-${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}`);
 
 //iii.DD/MM/YYYY HH:mm
-console.log(`${newDate.getDate()}/0${newDate.getMonth() + 1}/${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}`)
+console.log(`${newDate.getDate()}/0${newDate.getMonth() + 1}/${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}`);
+
+//Exercise Level 3;
+
 
 
 
