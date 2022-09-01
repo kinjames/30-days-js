@@ -48,4 +48,73 @@ if (ranNum % 2 == 0){
 
 //Exercise Level 2
 
+//1.Write a code which can give grades to students according to theirs scores:
+ let grade = Number(prompt('What is your score:'));
+if (grade >= 80 && grade <= 100){
+    console.log(`${grade}: grade A`)
+} else if (grade >=70 && grade <= 89){
+    console.log(`${grade}: grade B`)
+} else if (grade >=60 && grade <= 79){
+    console.log(`${grade}: grade C`)
+}else if (grade >= 50 && grade <= 59){
+    console.log(`${grade}: grade D`)
+} else if (grade >= 0 && grade <= 49){
+    console.log(`${grade}: grade F`)
+} else {
+    console.log("Wrong Score");
+}
+
+
+//2.Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
+let weather = prompt('What month is it?');
+weather = weather.toLocaleLowerCase();
+
+switch (weather) {
+    case 'september':
+    case 'october':
+    case 'novermber': console.log("Autumn");        
+        break;
+    case 'december':
+    case 'january':
+    case 'february': console.log('Winter');            
+    break;
+    case 'march':
+    case 'april':
+    case 'may': console.log('Spring');
+    break;
+    default: console.log('Summer')
+
+}
+
+
+//3.Check if a day is weekend day or a working day. Your script will take day as an input.
+let dayOfWeek = prompt('What is the day  today?');
+dayOfWeek = dayOfWeek.toLowerCase();
+
+switch (dayOfWeek) {
+    case 'saturday':
+    case 'sunday':
+        console.log(`${dayOfWeek} is a weekend`)    
+    break;
+    default:
+    console.log(`${dayOfWeek} is a working day`)
+}
+
+
 //Exercise Level 3
+//1.Write a program which tells the number of days in a month.
+
+let monthOfYear = prompt("Enter a month:").toLowerCase();
+
+switch (monthOfYear) {
+    case 'september':
+    case 'april':
+    case 'june':
+    case 'november':
+        console.log(`${monthOfYear} has 30 days.`);
+    break;
+    case 'february': console.log(`${monthOfYear} has 28 days.`)
+    break;
+    default:
+        console.log(`${monthOfYear} has 31 days.`)
+}
