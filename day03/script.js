@@ -25,7 +25,7 @@ console.log(parseInt('9.8') == 10);
 
 //4.Write three JavaScript statement which provide truthy value.
 //all positive integers
-//all string
+//all strings
 //boolean true
 //ii.Write three JavaScript statement which provide falsy value.
 //empty string
@@ -69,13 +69,13 @@ let dateNow = new Date();
 console.log(dateNow.getFullYear());
 
 //ii.What is the month today as a number?
-console.log(dateNow.getMonth());
+console.log(dateNow.getMonth() + 1);
 
 //iii.What is the date today?
 console.log(dateNow.getDate());
 
 //iv.What is the day today as a number?
-console.log(dateNow.getDay() + 1);
+console.log(dateNow.getDay());
 
 //v.What is the hours now?
 console.log(dateNow.getHours());
@@ -107,14 +107,16 @@ console.log(perimeterTotal);
 let lengthNum = Number(prompt('What is the value of the length'));
 let breadthNum = Number(prompt('What is the value of the length'));
 
-let areaTotal = 2 * (lengthNum + breadthNum);
-console.log(areaTotal);
+let areaTotal = lengthNum * breadthNum;
+let periTotal = 2 * (lengthNum + breadthNum);
+console.log(`Area of rectangle: ${areaTotal}`, `Perimeter of rectangle: ${periTotal}`);
 
 //4.Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 let circleRadius = Number(prompt('What is the radius of the circle?'));
 
 let area = Math.PI * circleRadius * circleRadius;
-console.log(area);
+let circumferenceCircle = 2 * Math.PI * circleRadius;
+console.log(`Area of circle: ${area}`, `Circumference of circle: ${circumferenceCircle}`);
 
 //5.Calculate the slope, x-intercept and y-intercept of y = 2x -2
 let xValue = Number(prompt('What is the value of x?'));
@@ -144,7 +146,7 @@ let workHours  = Number(prompt("How many Hours do you work in a week?"));
 let rate = Number(prompt('What is the rate per hour?'));
 
 let weeklyWage = workHours * rate;
-console.log(`Your weekly wage is ${weeklyWage}.`);
+console.log(`Your weekly wage is: ${weeklyWage}.`);
 
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 let yourName = prompt('What is your name?');

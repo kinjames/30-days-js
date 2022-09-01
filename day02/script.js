@@ -170,6 +170,13 @@ let becauseSentence = 'You cannot end a sentence with because because because is
  total = Number(salary[0]) + Number(salary[1]) + Number(salary[2]);
  console.log(total);
 
+// let sum  = 0;
+// for(i=0;i<salary.length;i++){
+//     salary[i]= Number(salary[i]);
+//     sum = sum + salary[i];
+//     console.log(sum);
+// } This iterate the numbers.
+
 
 
 
