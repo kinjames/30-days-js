@@ -62,4 +62,14 @@ let available = itCompanies.includes(google) ? `${google}` : "Company not found"
 console.log(available);
 
 //14.
+for(i=0;i<=itCompanies.length-1;i++){
+
+    if (oop == true){
+        let ooP = itCompanies[i].includes('oo');
+        console.log(console.log(itCompanies[ooP]))
+    } else {
+        console.log('Nothing')
+    }
+};
+
 
