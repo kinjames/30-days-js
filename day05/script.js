@@ -55,5 +55,11 @@ for(i=0;i<=itCompanies.length-1;i++){
 //12.Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 console.log(itCompanies.toString());
 
-//13.Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+//13.Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found.
+let google = itCompanies[1];
+
+let available = itCompanies.includes(google) ? `${google}` : "Company not found";
+console.log(available);
+
+//14.
 
