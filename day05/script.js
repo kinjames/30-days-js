@@ -160,7 +160,7 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 //i.Sort the array and find the min and max age
 let age = ages.sort();
-console.log(age)
+console.log(age);
 
-// let minAge = ages[0]
-// let maxAge = ages[0]
+let minAge = age[0]
+let maxAge = ages[9]
