@@ -61,15 +61,35 @@ let google = itCompanies[1];
 let available = itCompanies.includes(google) ? `${google}` : "Company not found";
 console.log(available);
 
-//14.
+//14.Filter out companies which have more than one 'o' without the filter method;
 for(i=0;i<=itCompanies.length-1;i++){
-
-    if (oop == true){
-        let ooP = itCompanies[i].includes('oo');
-        console.log(console.log(itCompanies[ooP]))
-    } else {
-        console.log('Nothing')
-    }
+    console.log(itCompanies[i].includes('oo'))
 };
 
+//15.Sort the array using sort() method
+console.log(itCompanies.sort());
+
+//16.Reverse the array using reverse() method
+console.log(itCompanies.reverse());
+
+//17.Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0,3));
+
+//18.Slice out the last 3 companies from the array
+console.log(itCompanies.slice(4,7));
+
+//19.Slice out the middle IT company or companies from the array.
+console.log(itCompanies.splice(3,1))
+
+//20.Remove the first IT company from the array
+console.log(itCompanies.shift());
+
+//21.Remove the middle IT company or companies from the array
+console.log(itCompanies.splice(2,1));
+
+//22.Remove the last IT company from the array
+console.log(itCompanies.pop());
+
+//23.Remove all IT companies
+console.log(itCompanies)
 
