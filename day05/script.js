@@ -164,3 +164,10 @@ console.log(age);
 
 let minAge = age[0]
 let maxAge = ages[9]
+
+console.log(`min Age: ${minAge}`,`Max Age: ${maxAge}`);
+
+//ii.Find the median age(one middle item or two middle items divided by two)
+let midlle = age.slice(4,6);
+let medianNum = (midlle[1] + midlle[2])/2
+console.log(medianNum);
