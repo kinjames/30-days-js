@@ -91,5 +91,6 @@ console.log(itCompanies.splice(2,1));
 console.log(itCompanies.pop());
 
 //23.Remove all IT companies
-console.log(itCompanies)
+ itCompanies =[];
+ console.log(itCompanies);
 
