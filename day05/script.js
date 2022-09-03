@@ -152,3 +152,15 @@ const backEnd = ['Node','Express', 'MongoDB']
 let fullStack = frontEnd.concat(backEnd);
 console.log(fullStack);
 
+
+//Exercise Level 3
+
+//1.The following is an array of 10 students ages:
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+//i.Sort the array and find the min and max age
+let age = ages.sort();
+console.log(age)
+
+// let minAge = ages[0]
+// let maxAge = ages[0]
