@@ -43,12 +43,12 @@ let lastCompany = itCompanies[itCompanies.length - 1];
 console.log(firstCompany,middleCompany,lastCompany);
 
 //10.Print out each company
-for(i=0;i<=itCompanies.length-1;i++){
+for(i=0;i<itCompanies.length;i++){
     console.log(itCompanies[i]);
 }
 
 //11.Change each company name to uppercase one by one and print them out
-for(i=0;i<=itCompanies.length-1;i++){
+for(i=0;i<itCompanies.length;i++){
     console.log(itCompanies[i].toUpperCase())
 };
 
