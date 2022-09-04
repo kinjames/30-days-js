@@ -32,3 +32,8 @@ if (countries.length%2 ===0){
   countries.push("Ghana");
   console.log(countries)
 }
+
+//Listing all the members of an array without using the index
+for(count of countries){
+  console.log(count);
+}
