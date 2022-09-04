@@ -161,13 +161,20 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 //i.Sort the array and find the min and max age
 let age = ages.sort();
 console.log(age);
+let maxNum = age[9]
+let minNum = age[0]
 
-let minAge = age[0]
-let maxAge = ages[9]
-
-console.log(`min Age: ${minAge}`,`Max Age: ${maxAge}`);
+console.log("Min Number is:" + age[0], "Max num is:" + age[9]);
+//In order to find the min and max of numbers, we can use Math.min(num) and Math.max(num)
 
 //ii.Find the median age(one middle item or two middle items divided by two)
-let midlle = age.slice(4,6);
-let medianNum = (midlle[1] + midlle[2])/2
-console.log(medianNum);
+let midNum_1 = age[4]
+let midNum_2 = age[5]
+let medianNum = (midNum_1 + midNum_2)/ 2;
+console.log(medianNum)
+
+//iii.Find the range of the ages(max minus min)
+let range = maxNum - minNum;
+console.log(range)
+
+//iv.Compare the value of (min - average) and (max - average), use abs() method;
