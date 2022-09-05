@@ -34,6 +34,6 @@ if (countries.length%2 ===0){
 }
 
 //Listing all the members of an array without using the index
-for(count of countries){
+for( const count of countries){
   console.log(count);
 }
