@@ -90,12 +90,12 @@ for (let i = 0; i <= 10; i++){
     console.log(`${i} ${i**2} ${i**3}`);
 }
 
-for (let i = 1; i <= 3; i++){
-    for(let j = 0; j<= 10; j++){
-        console.log(`${j} ${j**2} ${j**3}`);
-    }
+// for (let i = 1; i <= 3; i++){
+//     for(let j = 0; j<= 10; j++){
+//         console.log(`${j} ${j**2} ${j**3}`);
+//     }
 
-}
+// }
 
 
 //7.Use for loop to iterate from 0 to 100 and print only even numbers
@@ -121,6 +121,10 @@ for (let i = 0; i <= 100; i++){
 
 //10.Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 for (let i = 0; i <= 100; i++){
-    let arr = [i];
+    let nums = i;
+    let arr = [];
+    arr=arr.push(nums)
     console.log(arr)
 }
+
+//11.
