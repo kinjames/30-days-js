@@ -120,6 +120,20 @@ for (let i = 0; i <= 100; i++){
 }
 
 //10.Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+let arr = [];
+for(i=0;i<=100;i++){
+    arr.push(i);
+    let sum = 0;
+    // for (const num of arr) {
+    //     sum = sum + num  
+
+    // }
+    for(let j = 0; j < arr.length; j++){
+        sum += arr[j]
+    }
+
+    console.log(sum)
+}
 
 
 //11.
