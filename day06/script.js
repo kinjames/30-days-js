@@ -149,3 +149,12 @@ odd += arr_1[i];
 }
 } 
 console.log([even, odd]);   
+
+
+//12.Develop a small script which generate array of 5 random numbers
+var arrs = [];
+while(arrs.length < 5){
+    var r = Math.floor(Math.random() * 100) + 1;
+    if(arrs.indexOf(r) === -1) arrs.push(r);
+}
+console.log(arrs);
