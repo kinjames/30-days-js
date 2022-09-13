@@ -178,3 +178,6 @@ console.log(makeid(5));
 
 //Exercise Level 2
 //1.Develop a small script which generate any number of characters random id:
+
+
+//2.Write a script which generates a random hexadecimal number.
