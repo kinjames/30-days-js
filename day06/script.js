@@ -174,3 +174,7 @@ function makeid(length) {
 }
 
 console.log(makeid(5));
+
+
+//Exercise Level 2
+//1.Develop a small script which generate any number of characters random id:
