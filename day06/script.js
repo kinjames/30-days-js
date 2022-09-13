@@ -159,4 +159,18 @@ while(arrs.length < 5){
 }
 console.log(arrs);
 
-//13.Develop a small script which generate array of 5 random numbers and the numbers must be unique
+//14.Develop a small script which generate array of 5 random numbers and the numbers must be unique
+
+//15.Develop a small script which generate a six characters random id:
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+ charactersLength));
+   }
+   return result;
+}
+
+console.log(makeid(5));
