@@ -158,3 +158,5 @@ while(arrs.length < 5){
     if(arrs.indexOf(r) === -1) arrs.push(r);
 }
 console.log(arrs);
+
+//13.Develop a small script which generate array of 5 random numbers and the numbers must be unique
