@@ -16,3 +16,7 @@ function sumOf() {
 function newFunc() {
     
 }
+
+function newFunc() {
+    
+}
