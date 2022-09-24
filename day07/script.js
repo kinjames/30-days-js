@@ -12,3 +12,7 @@ function sumOf() {
 function sumOf() {
     return 1 + 2
 }
+
+function newFunc() {
+    
+}
