@@ -53,5 +53,11 @@ let name_1 = "James", name_2 = "Myers", isMarried_2 = false, myCountry = 'Ghana'
 personalAge = 24;
 yourAge = 30;
 
-console.log(`I am ${personalAge} years old.`)
-console.log(`You are ${yourAge} years old.`)
+console.log(`I am ${personalAge} years old.`);
+console.log(`You are ${yourAge} years old.`);
+
+function name(){
+  return 2+3
+}
+
+// continue
