@@ -60,4 +60,6 @@ function name(){
   return 2+3
 }
 
+name()
+
 // continue
