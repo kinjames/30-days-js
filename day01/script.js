@@ -56,10 +56,5 @@ yourAge = 30;
 console.log(`I am ${personalAge} years old.`);
 console.log(`You are ${yourAge} years old.`);
 
-function name(){
-  return 2+3
-}
-
-name()
 
 // continue
