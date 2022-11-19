@@ -178,6 +178,7 @@ let becauseSentence = 'You cannot end a sentence with because because because is
 //     sum = sum + salary[i];
 //     console.log(sum);
 // } This iterate the numbers.
+//This is the second thing
 
 
 
