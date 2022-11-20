@@ -24,4 +24,4 @@ console.log(companies)
 
 //final question
 
-//You can do this James 
+//You can do this kinjames
