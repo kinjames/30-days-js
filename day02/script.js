@@ -21,10 +21,10 @@ console.log(challenge.toLocaleLowerCase());
 console.log(challenge.substring(0,3));
 
 //7.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
-//To get this, we can find the last index of the sentence and also the index of the starting word
-console.log(challenge.length -1); //20
+//To get this, we can find the length of the sentence and also the index of the starting word
+console.log(challenge.length); //21
 console.log(challenge.indexOf('Day')) //3
-console.log(challenge.substring(3,20)); 
+console.log(challenge.substring(3,21)); 
 
 //8.Check if the string contains a word Script using includes() method
 console.log(challenge.includes('Script')); 
