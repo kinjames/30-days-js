@@ -1,0 +1,32 @@
+JavaScript naming Variables rules
+Camel Case
+Starting with either underscore or dollar sign
+No spaces
+Cannot start with a number
+
+How to add javascript to your work
+Inline
+Internal
+External
+
+Type of JavaScript Data
+Primitive Data
+String
+Number
+Boolean
+Symbol
+Null
+Undefined
+
+Non-primitive Data
+Objects
+Array
+
+Primitive data types are non modifiable whilst non primitive data type
+is modifiable. Meaning you cant change a primitive data type.
+Example you can change an array but you cant change a string.
+
+
+Primitive data can be compared using their values but non primitive
+data type cannot be compared using their values.
+Even if the values are the same, it cannot be compared.
