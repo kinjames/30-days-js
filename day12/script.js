@@ -8,3 +8,8 @@ points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8']
 sortedPoints =  [-4, -3, -1, -1, 0, 2, 4, 8]
 distance = 12
 */
+
+// 3.Write a pattern which identify if a string is a valid JavaScript variable
+/* 
+
+*/
