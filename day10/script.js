@@ -22,5 +22,10 @@ console.log(companies)
 //6.Create a map of countries and number of characters of a country
 // Algorithm
 
+// Exercises:Level 2
+// 1. Find a union b
+// 2. Find a intersection b
+// 3. Find a with b
+
 // Exercise Level 3
 // How many languages are there in the countries object file.
