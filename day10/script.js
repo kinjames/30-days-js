@@ -20,9 +20,4 @@ console.log(companies)
 //5.Create a set of 5 string elements from array
 
 //6.Create a map of countries and number of characters of a country
-
-
-//final question
-
-//You can do this kinjames
-//Peace
+// Algorithm
