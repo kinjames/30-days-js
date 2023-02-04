@@ -21,3 +21,6 @@ console.log(companies)
 
 //6.Create a map of countries and number of characters of a country
 // Algorithm
+
+// Exercise Level 3
+// How many languages are there in the countries object file.
