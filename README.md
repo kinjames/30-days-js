@@ -2,4 +2,4 @@
  
 This is Asabeneh's 30 Days Of JavaScript Course.
 
-i have to compleye
+i have to complete this program in a week. 
