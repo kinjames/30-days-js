@@ -19,3 +19,5 @@ I started react today, I,m using resources from net ninja's youtube channel and 
 I ws also able to finish the basics of javascript again, learnt new tricks since I used three different materials from different tutors to learn the basics.Each teacher had a new trick up on his sleeve to share.
 
 I learnt most of the string methods, math methods, array properties and array methods.
+
+I will continue to loops and functions tomorrow and hopefully finish objects too.
