@@ -16,4 +16,6 @@ I will be learning React, node.js and expressjs alongside mongo db
 
 I started react today, I,m using resources from net ninja's youtube channel and also using js mastery's resources for real life react projects.
 
+I ws also able to finish the basics of javascript again, learnt new tricks since I used three different materials from different tutors to learn the basics.Each teacher had a new trick up on his sleeve to share.
+
 
