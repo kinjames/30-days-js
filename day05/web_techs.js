@@ -1,4 +1,4 @@
-const webTechs = [
+export const webTechs = [
     'HTML',
     'CSS',
     'JavaScript',
@@ -6,6 +6,4 @@ const webTechs = [
     'Redux',
     'Node',
     'MongoDB'
-  ]
-
- 
+  ];
