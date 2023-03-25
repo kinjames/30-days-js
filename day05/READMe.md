@@ -1,1 +1,1 @@
-This folder contains questions and answers on arrays.
+This folder contains questions and answerss on arrays.
