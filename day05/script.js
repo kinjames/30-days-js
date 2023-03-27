@@ -49,16 +49,21 @@ let lastCompanyIndex = itCompanies.length - 1;
 let lastCompany = itCompanies[lastCompanyIndex];
 console.log(lastCompany);
 
-//  10. Print out each company
+//  10. Print out each company using for loop
 for (let i=0; i < itCompanies.length; i++){
     let eachCompany = itCompanies[i];
     console.log(eachCompany);
 };
 
-// alternate
+// alternate using the forEach method
 let eachCompanyAlt = itCompanies.forEach((item)=>{
     console.log(item);
 });
+
+// alternate2 Using for of loop
+for(let comp of itCompanies) {
+    console.log(comp.toUpperCase());
+};
 
 
 //  11. Change each company name to uppercase one by one and print them out
@@ -85,6 +90,11 @@ console.log(arrayToSentenceAlt);
 let companyExist = itCompanies.includes('Tesla');  //false
 let companyExistTrue = itCompanies.includes('Apple'); // true
 console.log(companyExist,companyExistTrue);
+if(companyExist){
+    console.log(itCompanies);
+} else{
+    console.log('Company is not found');
+};
 
 // 14. Filter out companies which have more than one 'o' without the filter method
 let filteredArray = [];
@@ -103,6 +113,14 @@ itCompanies.forEach((item)=>{
     }
 });
 console.log(filteredArrayAlt);
+
+// alternate2 using the filter
+let filteredArrayAltTwo = [];
+itCompanies.filter(item => item.includes('oo'))
+            .forEach(n =>{
+                filteredArrayAltTwo.push(n)
+            });
+    console.log(filteredArrayAltTwo);
 
 
 // 15. Sort the array using sort() method
