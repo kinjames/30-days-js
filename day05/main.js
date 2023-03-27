@@ -58,6 +58,37 @@ console.log(shoppingCart);
 shoppingCart[shoppingCart.indexOf('Tea')] = 'Green Tea';
 console.log(shoppingCart);
 
+// 4. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+let ethiopia = countries.includes('Ethiopia');
+let indexOfEthiopia = countries.indexOf('Ethiopia');
+
+if (ethiopia){
+    countries[indexOfEthiopia] = countries[indexOfEthiopia].toUpperCase();
+    console.log(true) 
+} else{
+    countries.push('Ethiopia');
+    console.log(false)
+};
+
+console.log(countries);
+
+// 5. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+
+let sassIncludes = webTechs.includes('Sass');
+if(sassIncludes){
+    console.log('Sass is a CSS preprocess');
+} else{
+    webTechs.push('Sass');
+};
+console.log(webTechs);
+
+// 6. Concatenate the following two variables and store it in a fullStack variable.
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux'];
+const backEnd = ['Node','Express', 'MongoDB'];
+let fullStack = frontEnd.concat(backEnd);
+
+console.log(fullStack)
+
 
 
 
