@@ -39,3 +39,26 @@ do{
     console.log(m);
     m--;
 } while (m >= 0);
+
+
+// 3. Iterate 0 to n using for loop
+let n;
+for (let i = 0; i <= n; n++){
+    console.log(i)
+}
+
+
+// 4. Write a loop that makes the following pattern using console.log():
+let stringPattern = "";
+for (let i = 1; i <= 7; i++){
+    stringPattern +="#";
+    console.log(stringPattern);
+}
+
+// 5. Use loop to print the following pattern:
+let pattern = "";
+for (let i = 0; i <= 10; i++){
+    let ans = i * i;
+    pattern = `${i} * ${i} = ${ans}`;
+    console.log(pattern);
+}
