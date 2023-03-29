@@ -62,3 +62,17 @@ for (let i = 0; i <= 10; i++){
     pattern = `${i} * ${i} = ${ans}`;
     console.log(pattern);
 }
+
+// 6. Using loop print the following pattern
+
+
+
+// 7. Use for loop to iterate from 0 to 100 and print only even numbers
+for (let i = 0; i <= 100; i+2){
+    console.log(i);
+}
+
+// 8. Use for loop to iterate from 0 to 100 and print only odd numbers
+for (let i = 0; i <= 100; i%2 !== 0){
+    console.log(i);
+}
