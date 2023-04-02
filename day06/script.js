@@ -8,7 +8,11 @@ import {
     webTechs
  } from "./webtechs.js";
 
- console.log(countries,webTechs);
+import{
+    mernStack
+}from './mern.js'
+
+ console.log(countries,webTechs,mernStack);
 
 // Exercise Level 1
 
@@ -173,6 +177,152 @@ console.log(otp);
 // Exercise Level Two
 
 // 1. Develop a small script which generate any number of characters random id:
+let passwdCharacters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+let passwd = '';
+let passwdLength = Math.floor(Math.random()*20);
+
+for(let i = 0; i <= passwdLength; i++){
+    let randomNumber = Math.floor(Math.random()*passwdCharacters.length);
+    passwd += passwdCharacters[randomNumber];
+}
+
+console.log(passwd);
+
+// 2. Write a script which generates a random hexadecimal number.
+let hexValues = 'abcdef0123456789';
+let hexColor = '#';
+
+for (i = 0; i<6; i++){
+    let hexRandom = Math.floor(Math.random()*hexValues.length);
+    hexColor += hexValues[hexRandom];
+    document.querySelector('body').style.background = hexColor
+}
+
+console.log(hexColor);
+
+// 3. Write a script which generates a random rgb color number.
+let rgb = 'rgb(';
+for (let i = 0; i < 3; i++){
+    let values = Math.floor(Math.random()*256);
+    rgb += values;
+    if(i<2){
+        rgb +=', ';
+    } 
+}
+rgb +=')';
+
+console.log(rgb);
 
 
+// 4. Using the above countries array, create the following new array.
+let newCountryArr = [];
+for(let i = 0; i < countries.length; i++){
+    newCountryArr.push(countries[i].toUpperCase());
+}
+console.log(newCountryArr);
 
+// Alternate
+let newCountryArrAlt = [];
+for(let country of countries){
+    newCountryArrAlt.push(country.toUpperCase());
+}
+console.log(newCountryArrAlt);
+
+// Alternate 2
+let newCountryArrAltTwo = [];
+countries.forEach((item)=>{
+    newCountryArrAltTwo.push(item.toUpperCase());
+})
+console.log(newCountryArrAltTwo);
+
+// countries.filter((item)=>{
+//     if(item.includes('land')){
+//         console.log(item)
+//     }
+// });
+
+// 5. Using the above countries array, create an array for countries length'.
+let countriesLength = [];
+for(let country of countries){
+    countriesLength.push(country.length);
+}
+console.log(countriesLength);
+
+// Alternate
+let countriesLengthAlt=[];
+for(i=0;i < countries.length; i++){
+    countriesLengthAlt.push(countries[i].length);
+}
+console.log(countriesLengthAlt);
+
+// Alternate Two
+let countriesLengthAltTwo = [];
+countries.forEach((item)=>{
+    countriesLengthAltTwo.push(item.length)
+})
+console.log(countriesLengthAltTwo);
+
+
+// 6. Use the countries array to create the following array of arrays:
+let arrOfArr = [];
+for (let country of countries){
+    let countryArr = [country, country.slice(0,3).toUpperCase(),country.length];
+    arrOfArr.push(countryArr);
+}
+console.log(arrOfArr);
+
+// 7. In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+
+let landCountry = [];
+for(let country of countries){
+    if(country.includes('land')){
+        landCountry.push(country);
+    }
+}
+console.log(landCountry);
+
+// 8. In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
+
+let iaCountry =[];
+for(let country of countries){
+    if(country.includes('ia')){
+        iaCountry.push(country);
+    }
+}
+console.log(iaCountry);
+
+// 9. Using the above countries array, find the country containing the biggest number of characters.
+let longestItem = '';
+for(let i = 0; i < countries.length; i++){
+    if(countries[i].length > longestItem.length){
+        longestItem = countries[i]
+    }
+}
+
+console.log(longestItem);
+
+// 10. Using the above countries array, find the country containing only 5 characters.
+let fiveLetter = [];
+for(let country of countries){
+    if(country.length === 5){
+        fiveLetter.push(country)
+    }
+}
+console.log(fiveLetter);
+
+// 11. Find the longest word in the webTechs array
+let longestTech = '';
+for(let i = 0; i < webTechs.length; i++){
+    if(webTechs[i].length > longestTech.length){
+        longestTech = webTechs[i]
+    }
+}
+console.log(longestTech);
+
+// 12. Use the webTechs array to create the following array of arrays:
+let techArr = [];
+for (let tech of webTechs){
+    let arrOfArrs = [tech,tech.length];
+    techArr.push(arrOfArrs);
+}
+console.log(techArr);
