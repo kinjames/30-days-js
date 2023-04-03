@@ -3,3 +3,5 @@ This folder contains questions and answers on arrays. The questions are from Asa
 I learnt how to import files from one JavaScript file to the other using the export and import module. 
 
 I learnt how to use most of the Math methods and string methods alongside array methods to manipulate arrays. 
+
+When you use slice without parameters, they make a copy of an array.
