@@ -326,3 +326,105 @@ for (let tech of webTechs){
     techArr.push(arrOfArrs);
 }
 console.log(techArr);
+
+// 13. An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+
+let mern = '';
+for(let merns of mernStack){
+    mern += merns[0]; 
+}
+console.log(mern);
+
+// 14. Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
+
+const items = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
+ for(let item of items){
+    console.log(item);
+ }
+
+// 15. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+const fruit = ['banana', 'orange', 'mango', 'lemon'];
+for (let i = fruit.length -1; i >= 0; i--){
+    console.log(fruit[i]);
+}
+
+// 16. Print all the elements of array as shown below.
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ]
+
+let itemString = fullStack.join();
+itemString = itemString.split(',');
+for(let item of itemString){
+    console.log(item.toUpperCase());
+}
+
+
+// Exercise Level 3
+
+// 1. Copy countries array(Avoid mutation);
+let copiedCountries = countries.slice();
+console.log(copiedCountries);
+
+// 2. Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
+let sortedCountries = copiedCountries.sort();
+console.log(sortedCountries);
+
+// 3. Sort the webTechs array and mernStack array
+let sortedWebTechs = webTechs.sort();
+let sortedMernStack = mernStack.sort();
+
+console.log(sortedWebTechs,sortedMernStack);
+
+// 4. Extract all the countries contain the word 'land' from the countries array and print it as array
+let countriesLand = [];
+
+for(let country of countries){
+    if(country.includes('land')){
+        countriesLand.push(country);
+    }
+}
+console.log(countriesLand);
+
+// 5.Find the country containing the hightest number of characters in the countries array
+let hightestChar = '';
+for(let country of countries){
+    if(country.length > hightestChar.length){
+        hightestChar = country;
+    }
+}
+console.log(hightestChar);
+
+// 6. Extract all the countries contain the word 'land' from the countries array and print it as array
+// let countriesLand = [];
+
+// for(let country of countries){
+//     if(country.includes('land')){
+//         countriesLand.push(country);
+//     }
+// }
+// console.log(countriesLand);
+
+// 7. Extract all the countries containing only four characters from the countries array and print it as array
+let fourCountry = [];
+for(let country of countries){
+    if(country.length === 4){
+        fourCountry.push(country);
+    }
+}
+console.log(fourCountry);
+
+// 8.Extract all the countries containing two or more words from the countries array and print it as array
+let twoWorderedCountry = countries.filter(country => country.includes(' '));
+console.log(twoWorderedCountry);
+
+// 9. Reverse the countries array and capitalize each country and stored it as an array
+let reverseArr=[];
+for(let country of countries){
+    reverseArr.push(country.toUpperCase());
+    reverseArr = reverseArr.reverse(); 
+}
+ console.log(reverseArr);
+
+
