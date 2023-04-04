@@ -217,3 +217,25 @@ const rgbColorGenerator = () => {
 console.log(rgbColorGenerator());
 document.querySelector('body').style.backgroundColor = rgbColorGenerator();
 
+// 3. Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
+let hexValues = 'abcdef0123456789';
+let numOfTimes = Math.floor(Math.random() * 20);
+let arrOfHex = [];
+
+const arrayOfHexaColors = () => {
+    for (i = 0; i < numOfTimes; i++){
+        let hexColor = '#';
+
+        for(j = 0; j < 6; j++){
+            let randoms = Math.floor(Math.random() * hexValues.length);
+            hexColor += hexValues[randoms];
+        }
+        arrOfHex.push(hexColor);
+    }
+    return arrOfHex;
+}
+
+console.log(arrayOfHexaColors());
+
+// 4. Write a function arrayOfRgbColors which return any number of RGB colors in an array.
+
