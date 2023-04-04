@@ -171,3 +171,49 @@ console.log(largestNumber(0,10,5));
 console.log(largestNumber(0,-10,-5));
 
  
+
+// Exercise Level Two
+// 1. Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*1234567890';
+let userInputOne = Number(window.prompt('Character length(1-20)'));
+let userInputTwo = Number(window.prompt('Number Of IDs'));
+let generatedId = [];
+
+
+const userIdGeneratedByUser = () => {
+    for(let i = 0; i < userInputTwo; i++){
+        let password = '';
+    
+        for(let j = 0; j < userInputOne; j++ ){
+            let randomNum = Math.floor(Math.random()*characters.length);
+            password += characters[randomNum];
+        }
+        
+        generatedId.push(password);
+    }
+
+    return generatedId;
+}
+
+let IDs = userIdGeneratedByUser();
+for (let passcode of IDs){
+    console.log(passcode);
+}
+
+// 2. Write a function name rgbColorGenerator and it generates rgb colors.
+const rgbColorGenerator = () => {
+    let rgb = 'rgb('
+
+    for (let i = 0; i < 3; i++){
+        let rgbNum = Math.floor(Math.random() * 256);
+        rgb += rgbNum
+        if(i < 2){
+            rgb += ','
+        }
+    }
+    rgb += ')';
+    return rgb;
+}
+console.log(rgbColorGenerator());
+document.querySelector('body').style.backgroundColor = rgbColorGenerator();
+
