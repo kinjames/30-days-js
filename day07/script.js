@@ -239,3 +239,299 @@ console.log(arrayOfHexaColors());
 
 // 4. Write a function arrayOfRgbColors which return any number of RGB colors in an array.
 
+let generateRandom = Math.floor(Math.random() * 5);
+let rgbArr = [];
+
+const arrayOfRgbColors = () => {
+    for (i = 0; i < generateRandom; i++){
+        let rgbColors = 'rgb(';
+        for(j = 0; j < 3; j++){
+            let rgbRanGen = Math.floor(Math.random() * 256);
+            rgbColors += rgbRanGen
+            if(j < 2){
+                rgbColors += ','
+            }
+        }
+        rgbColors += ')'
+        rgbArr.push(rgbColors);
+    }
+    return rgbArr;
+}
+
+console.log(arrayOfRgbColors());
+
+
+// 5. Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+const convertHexaToRgb = (hexcolor) => {
+    hexcolor = hexcolor.replace('#','');
+
+    let r = parseInt(hexcolor.substring(0,2), 16);
+    let g = parseInt(hexcolor.substring(2,4), 16);
+    let b = parseInt(hexcolor.substring(4,6), 16);
+
+    // the reason it was converted to a base of 16 is because hexadecimal(16) is the standard way of representing colors on the web.
+
+    return `rgb (${r},${g},${b})`;
+}
+console.log(convertHexaToRgb('#ff0342'));
+
+// 6.Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color
+const convertRgbToHexa = (red,green,blue) => {
+    let redHexa = red.toString(16).padStart(2,'0');
+    let greenHexa = green.toString(16).padStart(2,'0');
+    let blueHexa = blue.toString(16).padStart(2,'0');
+
+    // the padStart() method, is used to ensure that each hex string has two digits.
+    // string.padStart(targetLength [, padString])
+
+    return `#${redHexa}${blueHexa}${greenHexa}`
+}
+
+console.log(convertRgbToHexa(255,255,255))
+
+// 7.Write a function generateColors which can generate any number of hexa or rgb colors.
+// console.log(generateColors('hexa', 3)) // ['#a3e12f', '#03ed55', '#eb3d2b'];
+
+const generateColors = (type, length) => {
+    let colorArr = [];
+  
+    if (type === 'hex' || type === 'hexa') {
+      let hexCharacters = 'abcdef0123456789';
+      for (let i = 0; i < length; i++) {
+        let hexColors = '#';
+        for (let j = 0; j < 6; j++) {
+          let genRanNum = Math.floor(Math.random() * hexCharacters.length);
+          hexColors += hexCharacters[genRanNum];
+        }
+  
+        colorArr.push(hexColors);
+      }
+    } else if (type === 'rgb') {
+      for (let a = 0; a < length; a++) {
+        let rgbcolors = 'rgb(';
+        for (let b = 0; b < 3; b++) {
+          let ranRgbNum = Math.floor(Math.random() * 256);
+          rgbcolors += ranRgbNum;
+          if (b < 2) {
+            rgbcolors += ',';
+          }
+        }
+        rgbcolors += ')';
+  
+        colorArr.push(rgbcolors);
+      }
+    }
+  
+    return colorArr;
+  };
+  
+  let type = 'hexa';
+  let num = 4;
+  
+console.log(generateColors(type, num));
+
+// 8.Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
+const shuffleArray = (arr) => {
+     // Copy the original array to avoid mutation
+  const shuffledArr = [...arr];
+  
+  // Shuffle the array using the Fisher-Yates algorithm
+  for (let i = shuffledArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArr[i], shuffledArr[j]] = [shuffledArr[j], shuffledArr[i]];
+  }
+  
+  return shuffledArr;
+}
+
+let arr = ['mango','orange','avocado','pear'];
+let shuffledArray = shuffleArray(arr);
+console.log(shuffledArray); 
+
+
+// 9.Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+const factorial = (num) => {
+    if (num === 0) {
+      return 1;
+    } else {
+      return num * factorial(num - 1);
+    }
+}
+console.log(factorial(3));
+
+// 10.Call your function isEmpty, it takes a parameter and it checks if it is empty or not
+// for Objects
+function isEmpty(obj) {
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key))
+        return false;
+    }
+    return true;
+}
+
+// For String
+function isEmpty(str) {
+    return str.trim().length === 0;
+}
+
+// For Array
+function isEmpty(arr) {
+    if (!Array.isArray(arr)) {
+      return "Not an array";
+    }
+    return arr.length === 0;
+}
+  
+
+// 11.Call your function sum, it takes any number of arguments and it returns the sum.
+// const sum = () =>{
+//     let total = 0
+//     for (let i = 0; i < argurments.length; i++){
+//         total += argurments[i];
+//     }
+
+//     return total;
+// }
+
+// console.log(sum(3,3,2));
+
+// 12.Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+const sumOfArrayItems = (arr) => {
+    let sumTotal = 0
+    for(let i = 0; i < arr.length; i++){
+        if(typeof(arr[i]) !== 'number'){
+            return 'All array items should be numbers!'
+        }
+        sumTotal += arr[i];
+    }
+    return sumTotal;
+}
+
+console.log(sumOfArrayItems([1,2,3,4,5]));
+
+// 13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+const average = (arr) => {
+    let totalNum = 0;
+    for (let i = 0; i < arr.length; i++){
+        if(typeof(arr[i])!== 'number'){
+            return 'All array items should be numbers!!'
+        }
+        totalNum += arr[i];
+    }
+    let averageNum = totalNum / arr.length;
+    return averageNum;
+}
+console.log(average([1,2,3,4,5,6]));
+
+// 14.Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
+
+const modifyArray = (arr) =>{
+    if(arr.length >= 5){
+        arr[4] = arr[4].toUpperCase();
+    } else {
+        return 'Item not found'
+    }
+}
+
+console.log(modifyArray(arr));
+
+// 15.Write a function called isPrime, which checks if a number is prime number.
+const isPrime = (num) => {
+    if (num < 2) {
+      return false;
+    }
+    
+    // Check if the number is divisible by any number from 2 up to the square root of the number
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    
+    return true;
+};
+
+console.log(isPrime(4));
+
+// 16.Write a functions which checks if all items are unique in the array.
+
+const checkUnique = (arr) => {
+    const set = new Set(arr);
+    return set.size === arr.length;
+}
+
+console.log(checkUnique([1,1,2,3,4,5,6]));
+
+// 17.Write a function which checks if all the items of the array are the same data type.
+function checkSameDataType(arr) {
+    if (arr.length === 0) {
+      return true;
+    }
+    const firstType = typeof arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (typeof arr[i] !== firstType) {
+        return false;
+      }
+    }
+    return true;
+}
+  
+
+// 18.JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+const isValidVariable = (variableName) => {
+    // Check if the variable name starts with a letter, $, or _
+    if (!/^[a-zA-Z$_]/.test(variableName)) {
+      return false;
+    }
+  
+    // Check if the variable name contains any invalid characters
+    if (!/^[a-zA-Z$_][a-zA-Z0-9$_]*$/.test(variableName)) {
+      return false;
+    }
+  
+    // Check if the variable name is a reserved word
+    const reservedWords = [
+      'abstract', 'await', 'boolean', 'break', 'byte', 'case', 'catch', 'char',
+      'class', 'const', 'continue', 'debugger', 'default', 'delete', 'do', 'double',
+      'else', 'enum', 'eval', 'export', 'extends', 'false', 'final', 'finally', 'float',
+      'for', 'function', 'goto', 'if', 'implements', 'import', 'in', 'instanceof',
+      'int', 'interface', 'let', 'long', 'native', 'new', 'null', 'package', 'private',
+      'protected', 'public', 'return', 'short', 'static', 'super', 'switch',
+      'synchronized', 'this', 'throw', 'throws', 'transient', 'true', 'try', 'typeof',
+      'var', 'void', 'volatile', 'while', 'with', 'yield'
+    ];
+    if (reservedWords.includes(variableName)) {
+      return false;
+    }
+  
+    // The variable name is valid
+    return true;
+}
+  
+
+// 19.Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+const generateRandomNumbers = () => {
+    let numbers = new Set();
+    while (numbers.size < 7) {
+      numbers.add(Math.floor(Math.random() * 10));
+    }
+    return Array.from(numbers);
+  };
+  
+  console.log(generateRandomNumbers()); // Example output: [1, 5, 8, 0, 7, 6, 4]
+  
+
+
+// 20.Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+
+const reverseCountries = (countries) => {
+    const reversedCountries = [...countries].reverse();
+    return reversedCountries;
+  };
+  
+  
+
+
+
+
