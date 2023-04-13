@@ -1,95 +1,42 @@
-//Introduction
+// Introduction
+// Exercises
 
-//Exercies
+// 1.Write a single line comment which says, comments can make code readable
+// comments can make code readable
 
-//1.Write a single line comment which says, comments can make code readable.
-//comments can make code readable.
+// 2.Write another single comment which says, Welcome to 30DaysOfJavaScript
+// Welcome to 30DaysOfJavaScript
 
-//2.Write another single comment which says, Welcome to 30DaysOfJavaScript
-//Welcome to 30DaysOfJavaScript.
-
-//3.Write a multiline comment which says, comments can make code readable, easy to reuse and informative
+// 3.Write a multiline comment which says, comments can make code readable, easy to reuse and informative
 /*
  comments can make code readable, easy to reuse and informative
 */
 
-//4.Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
- let num = 1
- let str = 'Hello, World!';
- let bool = true;
- let und;
- let empty = null;
+// 4.Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
 
- //5.Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
- console.log(typeof(num), num);
- console.log(typeof(str), str);
- console.log(typeof(bool), bool);
- console.log(typeof(und), und);
- console.log(typeof(empty), empty);
+// 5.Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
 
- //6.Declare four variables without assigning values
-  let myName;
-  let myAge;
-  let myWork;
-  let isMarried;
+// 6. Declare four variables without assigning values
+let name;
+let age;
+let isMarried;
+let job;
 
-//7.Declare four variables with assigned values
-let myName_1 = 'James Kofi Myers';
-let myAge_1 = 24;
-let myWork_1 = "Programmer";
-let isMarried_1 = false;
+// 7.Declare four variables with assigned values
+let myName = 'James';
+let myAge = 24;
+let marriedStatus = 'single';
+let myJob = 'student';
 
-//8.Declare variables to store your first name, last name, marital status, country and age in multiple lines
-let firstName = "James";
-let lastName = "Myers";
-let maritalStatus = false;
+// 8.Declare variables to store your first name, last name, marital status, country and age in multiple lines
+let firstName = 'James';
+let lastName = 'James';
+let ismarried = false;
 let country = 'Ghana';
-let age = 24;
+let myage = 24;
 
-//9.Declare variables to store your first name, last name, marital status, country and age in a single line
-let name_1 = "James", name_2 = "Myers", isMarried_2 = false, myCountry = 'Ghana', hisAge = 24;
+// 9.Declare variables to store your first name, last name, marital status, country and age in a single line
+let yourFirstName = 'John', yourLastName = 'Doe', yourMaritalStatus = true, yourCountry = Canada, yourAge = 45;
 
-//10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
-personalAge = 24;
-yourAge = 30;
-
-console.log(`I am ${personalAge} years old.`);
-console.log(`You are ${yourAge} years old.`);
-
-
-// continue
-
-/* 
-JavaScript naming Variables rules
-Camel Case
-Starting with either underscore or dollar sign
-No spaces
-Cannot start with a number
-
-How to add javascript to your work
-Inline
-Internal
-External
-
-Type of JavaScript Data
-Primitive Data
-String
-Number
-Boolean
-Symbol
-Null
-Undefined
-
-Non-primitive Data
-Objects
-Array
-
-Primitive data types are non modifiable whilst non primitive data type
-is modifiable. Meaning you cant change a primitive data type.
-Example you can change an array but you cant change a string.
-
-
-Primitive data can be compared using their values but non primitive
-data type cannot be compared using their values.
-Even if the values are the same, it cannot be compared.
-*/
+// 10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
+console.log(`I am ${myAge} years old \n You are ${yourAge} years old.`);
