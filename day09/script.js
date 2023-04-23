@@ -317,6 +317,70 @@ const lastTen = getLastTenCountries(countriess);
 console.log(lastTen);
 
 // 7. Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+// Import the array of countries
+
+// Declare an empty object to store the count of each letter
+const letterCount = {};
+
+// Loop through each country in the array
+countriess.forEach((country) => {
+  // Get the first letter of the country name
+  const firstLetter = country.name.charAt(0);
+
+  // If the letterCount object already has a key for this letter, increment the count
+  if (letterCount[firstLetter]) {
+    letterCount[firstLetter]++;
+  }
+  // Otherwise, set the count for this letter to 1
+  else {
+    letterCount[firstLetter] = 1;
+  }
+});
+
+// Find the letter with the highest count
+let maxCount = 0;
+let maxLetter = "";
+for (const letter in letterCount) {
+  if (letterCount[letter] > maxCount) {
+    maxCount = letterCount[letter];
+    maxLetter = letter;
+  }
+}
+
+// Log the result to the console
+console.log(
+  `The letter '${maxLetter}' is used the most as the initial letter for country names, with a count of ${maxCount}.`
+);
 
 // Exercise Level 3
-// 1.
+// 1.Use the countries information, in the data folder. Sort countries by name, by capital, by population
+countriess.sort((a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log(countriess); //alphabetical order
+
+// Capital
+countriess.sort((a, b) => {
+  if (a.capital < b.capital) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log(countriess); //alphabetical order
+
+// Population
+countriess.sort((a, b) => {
+  if (a.population < b.population) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log(countriess); //ascending order
+
+// 2. Find the 10 most spoken languages:
