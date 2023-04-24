@@ -1,11 +1,12 @@
 //Sets and Map
 
+import { countriess } from "./countries_data.js";
+
 //Exercise level 1
-/* 
-const a = [4, 5, 8, 9]
-const b = [3, 4, 5, 7]
-const countries = ['Finland', 'Sweden', 'Norway']
-*/
+
+const a = [4, 5, 8, 9];
+const b = [3, 4, 5, 7];
+// const countries = ['Finland', 'Sweden', 'Norway']
 
 //1.create an empty set
 const companies = new Set();
@@ -49,9 +50,21 @@ console.log(countryCharCount);
 // Algorithm
 
 // Exercises:Level 2
+
 // 1. Find a union b
+const A = new Set(a);
+const B = new Set(b);
+const c = [...a, ...b];
+const C = new Set(c);
+console.log(C);
+
 // 2. Find a intersection b
+const setA = new Set(a);
+const setB = new Set(b);
+const interSect = a.filter((num) => B.has(num));
+console.log(interSect);
 // 3. Find a with b
 
 // Exercise Level 3
-// How many languages are there in the countries object file.
+// 1. How many languages are there in the countries object file.
+const languageSet = new Set();
