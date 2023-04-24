@@ -67,4 +67,43 @@ console.log(interSect);
 
 // Exercise Level 3
 // 1. How many languages are there in the countries object file.
+// Using Set
 const languageSet = new Set();
+countriess.forEach((country) => {
+  country.languages.forEach((language) => {
+    languageSet.add(language);
+  });
+});
+const numberOfLanguages = languageSet.size;
+console.log(languageSet);
+console.log(numberOfLanguages);
+
+// Using Map
+const languagesMap = new Map();
+countriess.forEach((country) => {
+  country.languages.forEach((language) => {
+    if (languagesMap.has(language)) {
+      const count = languagesMap.get(language);
+      languagesMap.set(language, count + 1);
+    } else {
+      languagesMap.set(language, 1);
+    }
+  });
+});
+
+console.log(languagesMap.size);
+
+// 2. Use the countries data to find the 10 most spoken languages:
+
+const languageCounts = countriess
+  .flatMap((country) => country.languages)
+  .reduce((counts, language) => {
+    counts.set(language, (counts.get(language) || 0) + 1);
+    return counts;
+  }, new Map());
+
+const topLanguages = [...languageCounts.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 10);
+
+console.log(topLanguages);
