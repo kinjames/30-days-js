@@ -1,4 +1,5 @@
 // Destructuring and Spreading
+import { countriess } from "./countries_data.js";
 // Exercise Level 1
 const constants = [2.72, 3.14, 9.81, 37, 100];
 const countries = ["Finland", "Estonia", "Sweden", "Denmark", "Norway"];
@@ -90,9 +91,22 @@ console.log(lessThanTwoSkills);
 
 // Exercise Level 3
 // 1. Destructure the countries object print name, capital, population and languages of all countries
+for (const country of countriess) {
+  let { name, capital, population, languages } = country;
+  if (languages.length == "") {
+    languages = "unkown";
+  } else if (languages.length > 1) {
+    languages.slice(0, -1).join(", ");
+  }
+  const countryDetails = `name: ${name} \ncapital: ${capital} \npopulation: ${population} \nlanguages: ${languages}`;
+  console.log(countryDetails);
+}
 
 // 2.A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
 const studentOne = ["David", ["HTM", "CSS", "JS", "React"], [98, 85, 90, 95]];
+let [name, skills, scores] = studentOne;
+let [htmlScore, cssScore, jsScore, reactScore] = scores;
+console.log(name, skills, jsScore, reactScore);
 
 // 3.Write a function called convertArrayToObject which can convert the array to a structure object.
 const students = [
