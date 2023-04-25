@@ -133,6 +133,9 @@ const student = {
     dataScience: ["Python", "R", "D3.js"],
   },
 };
+
+const newstudent = { ...student };
+console.log(newstudent);
 // Add Bootstrap with level 8 to the front end skill sets
 // Add Express with level 9 to the back end skill sets
 // Add SQL with level 8 to the data base skill sets
