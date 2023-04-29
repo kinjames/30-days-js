@@ -1,4 +1,4 @@
-console.log('James Kofi Myers');
+console.log("James Kofi Myers");
 
 // Console Object Methods
 // Exercise Level One
@@ -8,3 +8,13 @@ console.log('James Kofi Myers');
 // 2. Display the countries object as a table
 
 // 3. Use console.group() to group logs
+
+// Exercises:Level 2
+// 1. 10 > 2 * 10 use console.assert()
+
+// 2. Write a warning message using console.warn()
+
+// 3. Write an error message using console.error()
+
+// Exercises:Level 3
+// 1. Check the speed difference among the following loops: while, for, for of, forEach
