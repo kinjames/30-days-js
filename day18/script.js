@@ -10,4 +10,4 @@
 
 // 2.Read the countries api and find out the 10 largest countries
 
-// 3.
+// 3.Read the countries api and count total number of languages in the world used as officials.
