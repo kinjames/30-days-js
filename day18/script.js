@@ -4,3 +4,6 @@
 
 // Exercise Level 2
 // 1.Print out all the cat names in to catNames variable.
+
+// Exercise Level 3
+// 1.
