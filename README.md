@@ -16,6 +16,8 @@ I will be learning React, node.js and expressjs alongside mongo db
 
 I started react today, I,m using resources from net ninja's youtube channel and also using js mastery's resources for real life react projects.
 
+tailwind css
+
 I ws also able to finish the basics of javascript again, learnt new tricks since I used three different materials from different tutors to learn the basics.Each teacher had a new trick up on his sleeve to share.
 
 I learnt most of the string methods, math methods, array properties and array methods.
@@ -23,3 +25,5 @@ I learnt most of the string methods, math methods, array properties and array me
 I will continue to loops and functions tomorrow and hopefully finish objects too.
 
 almost done with JSON and Classes
+
+styled components
