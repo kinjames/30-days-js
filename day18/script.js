@@ -24,6 +24,7 @@
 // Secondary Color: #54C571 (Green)
 // Accent Color: #3A4BC3 (Royal Blue)
 // Background Color: #F7F7F7 (Light Gray)
+
 // Color Palette 3: Minimalist and Clean
 
 // Primary Color: #2E2E2E (Dark Gray)
