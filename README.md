@@ -34,3 +34,4 @@ I will do a recap on all that I have learnt on javascript.
 Then I will continue with Regular Expressions.
 
 Final projects!!
+Done and Dusted
