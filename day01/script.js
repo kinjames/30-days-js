@@ -39,8 +39,8 @@ let myage = 25;
 let yourFirstName = "John",
   yourLastName = "Doe",
   yourMaritalStatus = true,
-  yourCountry = Canada,
+  yourCountry = "Canada",
   yourAge = 45;
 
 // 10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
-console.log(`I am ${myAge} years old. \n You are ${yourAge} years old.`);
+console.log(`I am ${myAge} years old. \nYou are ${yourAge} years old.`);
