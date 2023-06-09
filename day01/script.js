@@ -1,15 +1,15 @@
 // Introduction
 // Exercises
 
-// 1.Write a single line comment which says, comments can make code readable
-// comments can make code readable
+// 1.Write a single line comment which says, comments can make code readable.
+// comments can make code readable.
 
-// 2.Write another single comment which says, Welcome to 30DaysOfJavaScript
-// Welcome to 30DaysOfJavaScript
+// 2.Write another single comment which says, Welcome to 30DaysOfJavaScript.
+// Welcome to 30DaysOfJavaScript.
 
-// 3.Write a multiline comment which says, comments can make code readable, easy to reuse and informative
+// 3.Write a multiline comment which says, comments can make code readable, easy to reuse and informative.
 /*
- comments can make code readable, easy to reuse and informative
+ comments can make code readable, easy to reuse and informative.
 */
 
 // 4.Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
@@ -23,20 +23,24 @@ let isMarried;
 let job;
 
 // 7.Declare four variables with assigned values
-let myName = 'James';
-let myAge = 24;
-let marriedStatus = 'single';
-let myJob = 'student';
+let myName = "James";
+let myAge = 25;
+let marriedStatus = "single";
+let myJob = "student";
 
 // 8.Declare variables to store your first name, last name, marital status, country and age in multiple lines
-let firstName = 'James';
-let lastName = 'James';
+let firstName = "James";
+let lastName = "James";
 let ismarried = false;
-let country = 'Ghana';
+let country = "Ghana";
 let myage = 24;
 
 // 9.Declare variables to store your first name, last name, marital status, country and age in a single line
-let yourFirstName = 'John', yourLastName = 'Doe', yourMaritalStatus = true, yourCountry = Canada, yourAge = 45;
+let yourFirstName = "John",
+  yourLastName = "Doe",
+  yourMaritalStatus = true,
+  yourCountry = Canada,
+  yourAge = 45;
 
 // 10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
 console.log(`I am ${myAge} years old \n You are ${yourAge} years old.`);
