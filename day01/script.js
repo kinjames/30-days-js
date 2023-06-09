@@ -30,10 +30,10 @@ let myJob = "student";
 
 // 8.Declare variables to store your first name, last name, marital status, country and age in multiple lines
 let firstName = "James";
-let lastName = "James";
+let lastName = "Myers";
 let ismarried = false;
 let country = "Ghana";
-let myage = 24;
+let myage = 25;
 
 // 9.Declare variables to store your first name, last name, marital status, country and age in a single line
 let yourFirstName = "John",
@@ -43,4 +43,4 @@ let yourFirstName = "John",
   yourAge = 45;
 
 // 10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
-console.log(`I am ${myAge} years old \n You are ${yourAge} years old.`);
+console.log(`I am ${myAge} years old. \n You are ${yourAge} years old.`);
