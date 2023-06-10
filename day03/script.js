@@ -211,26 +211,28 @@ console.log(`Your remaining seconds left on earth is ${remainingSeconds}`);
 
 //15.Create a human readable time format using the Date time object
 //i.YYYY-MM-DD HH:mm
-let newDate = new Date();
-console.log(
-  `${newDate.getFullYear()}-0${
-    newDate.getMonth() + 1
-  }-${newDate.getDate()} ${newDate.getHours()}:${newDate.getMinutes()}`
-);
+
+let currentDateTime = new Date();
+
+let yearNum = currentDateTime.getFullYear();
+let monthNum = String(currentDateTime.getMonth() + 1).padStart(2, "0");
+let dayNum = String(currentDateTime.getDate()).padStart(2, "0");
+let hoursNum = String(currentDateTime.getHours()).padStart(2, "0");
+let minutesNum = String(currentDateTime.getMinutes()).padStart(2, "0");
+
+let humanReadableFormat = `${yearNum}-${monthNum}-${dayNum} ${hoursNum}:${minutesNum}`;
+
+console.log(humanReadableFormat);
 
 //ii. DD-MM-YYYY HH:mm
-console.log(
-  `${newDate.getDate()}-0${
-    newDate.getMonth() + 1
-  }-${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}`
-);
+let humanReadableFormat2 = `${dayNum}-${monthNum}-${yearNum} ${hoursNum}:${minutesNum}`;
+
+console.log(humanReadableFormat2);
 
 //iii.DD/MM/YYYY HH:mm
-console.log(
-  `${newDate.getDate()}/0${
-    newDate.getMonth() + 1
-  }/${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}`
-);
+let humanReadableFormat3 = `${dayNum}/${monthNum}/${yearNum} ${hoursNum}:${minutesNum}`;
+
+console.log(humanReadableFormat3);
 
 //Exercise Level 3;
 //1.Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
