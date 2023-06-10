@@ -193,7 +193,7 @@ console.log(`I am ${ourAge} years older than you`);
 
 //13.Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 let birthYear = Number(prompt("Enter birth year?"));
-userAge = birthYear - dateNow.getFullYear();
+userAge = dateNow.getFullYear() - birthYear;
 let difference = 18 - userAge;
 
 let outcome =
@@ -205,8 +205,9 @@ console.log(outcome);
 //14.Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years.
 let yearsLived = Number(prompt("Enter number of years you live:"));
 let secondsLived = yearsLived * 31536000;
+let remainingSeconds = 100 * 31536000 - secondsLived;
 
-console.log(secondsLived);
+console.log(`Your remaining seconds left on earth is ${remainingSeconds}`);
 
 //15.Create a human readable time format using the Date time object
 //i.YYYY-MM-DD HH:mm
