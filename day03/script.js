@@ -100,7 +100,8 @@ console.log(dateNow.getHours());
 console.log(dateNow.getMinutes());
 
 //vii.Find out the numbers of seconds elapsed from January 1, 1970 to now.
-console.log(dateNow.getTime());
+let nowInSeconds = Math.floor(Date.now() / 1000);
+console.log(nowInSeconds);
 
 //Exercise Level 2
 //1.Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
