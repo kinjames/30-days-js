@@ -14,7 +14,7 @@ console.log(result);
 
 //2.Compare the values of myAge and yourAge using if … else. Based on the comparison and log the result to console stating who is older (me or you). Use prompt(“Enter your age:”) to get the age as input.
 
-let myAge = 24;
+let myAge = 25;
 let userAge = Number(prompt("How old are you?"));
 
 if (myAge > userAge) {
