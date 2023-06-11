@@ -102,11 +102,11 @@ let arrayToSentenceAlt = itCompanies.join();
 console.log(arrayToSentenceAlt);
 
 //  13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
-let companyExist = itCompanies.includes("Tesla"); //false
+let companyExist = "Tesla"; //false
 let companyExistTrue = itCompanies.includes("Apple"); // true
 console.log(companyExist, companyExistTrue);
-if (companyExist) {
-  console.log(itCompanies);
+if (itCompanies.includes(companyExist)) {
+  console.log(companyExist);
 } else {
   console.log("Company is not found");
 }
