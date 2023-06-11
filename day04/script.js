@@ -92,7 +92,7 @@ switch (weather) {
 }
 
 //3.Check if a day is weekend day or a working day. Your script will take day as an input.
-let dayOfWeek = prompt("What is the day  today?");
+let dayOfWeek = prompt("What day is today?");
 dayOfWeek = dayOfWeek.toLowerCase();
 
 switch (dayOfWeek) {
