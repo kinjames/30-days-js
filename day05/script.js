@@ -177,8 +177,6 @@ if (itCompanies.length % 2 === 0) {
   console.log(removeMiddleCompanies);
 }
 
-// console.log(sliceMiddlea);
-
 // 22. Remove the last IT company from the array
 let removeLastCompany = itCompanies.pop();
 console.log(removeLastCompany);
