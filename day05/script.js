@@ -138,7 +138,7 @@ itCompanies
   });
 console.log(filteredArrayAltTwo);
 
-// 15. Sort the array using sort() method
+// 15. Sort the array using sort() array method
 let sortedCompany = itCompanies.sort();
 console.log(sortedCompany);
 
