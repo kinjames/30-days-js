@@ -447,7 +447,7 @@ const isPrime = (num) => {
     return false;
   }
 
-  // Check if the number is divisible by any number from 2 up to the square root of the number
+  // Check if the number is divisible by any number from 2 up to the square root of the number.
   for (let i = 2; i <= Math.sqrt(num); i++) {
     if (num % i === 0) {
       return false;
