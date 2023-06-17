@@ -26,6 +26,9 @@ body {
 .header-text {
   padding: 1.25rem 0 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 h1 {
