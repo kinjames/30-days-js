@@ -10,7 +10,7 @@ body {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  padding-inline: 1.25rem;
+  padding-inline: 1rem;
 }
 
 .main {
@@ -20,7 +20,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
-  border: 2px solid red;
 }
 
 .header-text {
@@ -32,21 +31,50 @@ body {
 }
 
 h1 {
-  color: rgb(76, 172, 76);
+  color: #60be7e;
 }
 
 .form {
-  border: 2px solid red;
   margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+}
+
+.error-message {
+  color: #eb695b;
 }
 
 .input {
   width: 600px;
-  border: 2px solid rgb(76, 172, 76);
-  height: 1.8rem;
+  border: 2px solid #60be7e;
+  height: 2rem;
   outline: none;
+  padding-inline: 0.5rem;
 }
 
 .btn {
   width: 150px;
+  height: 2rem;
+  background-color: #60be7e;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 39.9375em) {
+  body,
+  .form,
+  .main,
+  .input {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
