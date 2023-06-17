@@ -34,3 +34,19 @@ body {
 h1 {
   color: rgb(76, 172, 76);
 }
+
+.form {
+  border: 2px solid red;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 600px;
+  border: 2px solid rgb(76, 172, 76);
+  height: 1.8rem;
+  outline: none;
+}
+
+.btn {
+  width: 150px;
+}
