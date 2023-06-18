@@ -34,9 +34,9 @@ h1 {
   color: #60be7e;
 }
 
-.form {
+/* .form {
   margin-bottom: 1.5rem;
-}
+} */
 
 form {
   display: flex;
@@ -49,7 +49,7 @@ form {
 
 .input {
   width: 600px;
-  border: 2px solid #60be7e;
+  border: 1px solid #60be7e;
   height: 2rem;
   outline: none;
   padding-inline: 0.5rem;
@@ -62,6 +62,19 @@ form {
   color: #fff;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+.number_tile {
+  width: 70px;
+  background-color: #f7dc5c;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
 }
 
 @media (max-width: 39.9375em) {
