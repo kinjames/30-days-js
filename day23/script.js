@@ -5,4 +5,6 @@ console.log("Hello,World!!");
 
 let userInput = document.querySelector(".input").value;
 
+console.log(userInput);
+
 // for(i = 0, i <)
