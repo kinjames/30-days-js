@@ -65,6 +65,13 @@ form {
   cursor: pointer;
 }
 
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
 .number_tile {
   width: 70px;
   background-color: #f7dc5c;
