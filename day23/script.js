@@ -5,13 +5,23 @@ console.log("Hello,World!!");
 
 const form = document.querySelector(".for");
 const btn = document.querySelector(".btn");
+let tileContainer = document.querySelector(".tile-container");
+let errorMsg = document.querySelector(".error-message");
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
-
   const input = document.querySelector(".input").value;
-
-  for (let i = 0; i < input; i++) {
-    console.log(i);
+  if (input === "") {
+    errorMsg.textContent = "Enter number value on the input field.";
+  } else if (typeof input === "string") {
+    errorMsg.textContent = "Enter a number.";
+  } else {
+    errorMsg.textContent = " ";
   }
+  for (let i = 0; i < input; i++) {
+    let tile = `<div class="number_tile">${i}</div>`;
+    tileContainer.innerHTML = tile;
+    console.log(tileContainer);
+  }
+  window.addEventListener("DOMContentLoaded", () => {});
 });

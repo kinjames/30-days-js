@@ -45,6 +45,7 @@ form {
 
 .error-message {
   color: #eb695b;
+  font-size: 0.75rem;
 }
 
 .input {
