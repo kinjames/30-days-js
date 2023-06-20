@@ -11,7 +11,7 @@ let errorMsg = document.querySelector(".error-message");
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   const input = document.querySelector(".input").value;
-  if (input === "") {
+  if (input === "" || typeof input === "string") {
     errorMsg.textContent = "Enter number value on the input field.";
   }
   for (let i = 0; i < input; i++) {
