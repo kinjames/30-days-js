@@ -13,10 +13,6 @@ btn.addEventListener("click", (e) => {
   const input = document.querySelector(".input").value;
   if (input === "") {
     errorMsg.textContent = "Enter number value on the input field.";
-  } else if (typeof input === "string") {
-    errorMsg.textContent = "Enter a number.";
-  } else {
-    errorMsg.textContent = " ";
   }
   for (let i = 0; i < input; i++) {
     let tile = `<div class="number_tile">${i}</div>`;
