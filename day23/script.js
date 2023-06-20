@@ -13,6 +13,8 @@ btn.addEventListener("click", (e) => {
   const input = document.querySelector(".input").value;
   if (input === "" || typeof input === "string") {
     errorMsg.textContent = "Enter number value on the input field.";
+  } else {
+    errorMsg.style.visibility = "hidden";
   }
   for (let i = 0; i < input; i++) {
     let tile = `<div class="number_tile">${i}</div>`;
