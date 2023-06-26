@@ -34,7 +34,7 @@ I will do a recap on all that I have learnt on javascript.
 Then I will continue with Regular Expressions.
 
 Final projects!!
-number generator
+<h3>number generator</h3>
 nasa page
 country generator
 Done and Dusted
