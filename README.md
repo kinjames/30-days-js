@@ -36,5 +36,5 @@ Then I will continue with Regular Expressions.
 Final projects!!
 <h3>number generator</h3>
 <h3>nasa page</h3>
-country generator
+<h3>Country Generator</h3>
 Done and Dusted
