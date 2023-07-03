@@ -20,7 +20,7 @@
 let name;
 let age;
 let isMarried;
-let job;
+let jobs;
 
 // 7.Declare four variables with assigned values
 let myName = "James";
