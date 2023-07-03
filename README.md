@@ -14,7 +14,7 @@ I will be starting from scratch again. I want to use a week to complete it and a
 
 I will be learning React, node.js and expressjs alongside mongo db
 
-I started react today, I,m using resources from net ninja's youtube channel and also using js mastery's resources for real life react projects.
+<p>I started react today, I'm using resources from net ninja's youtube channel and also using js mastery's resources for real life react projects.</p>
 
 tailwind css
 
@@ -34,4 +34,10 @@ I will do a recap on all that I have learnt on javascript.
 Then I will continue with Regular Expressions.
 
 Final projects!!
+<h3>number generator</h3>
+<h3>nasa page</h3>
+<h3>Country Generator</h3>
+<p>Taking a three day break. </p>
+<p>Went On a Break</p>
+<p>Back like I never left</p>
 Done and Dusted
