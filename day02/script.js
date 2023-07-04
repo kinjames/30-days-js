@@ -18,6 +18,8 @@ console.log(challenge.toUpperCase());
 console.log(challenge.toLowerCase());
 
 //6.Cut (slice) out the first word of the string using substr() or substring() method
+let firstWord = challenge.substr(0, challenge.indexOf(" "));
+console.log(firstWord);
 console.log(challenge.substring(0, 2));
 
 //7.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
