@@ -28,6 +28,9 @@ console.log(challenge.length); //21
 console.log(challenge.indexOf("Day")); //3
 console.log(challenge.substring(3, 21));
 
+let phrase = challenge.slice(3);
+console.log(phrase);
+
 //8.Check if the string contains a word Script using includes() method
 console.log(challenge.includes("Script"));
 
@@ -85,6 +88,8 @@ console.log(challenge.match(pattern));
 let statement1 = "30 Days Of ";
 let statement2 = "JavaScript";
 let fullStatement = statement1 + statement2;
+let fullStatementTwo = statement1.concat(statement1);
+console.log(fullStatementTwo);
 console.log(fullStatement);
 
 //25.Use repeat() method to print 30 Days Of JavaScript 2 times
