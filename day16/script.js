@@ -107,6 +107,8 @@ const txt = `{
 }
 `;
 // 1.Change skills array to JSON using JSON.stringify()
+const skillsJSON = JSON.stringify(skills);
+console.log(skillsJSON);
 
 // 2.Stringify the age variable
 
