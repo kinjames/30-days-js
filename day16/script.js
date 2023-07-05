@@ -115,5 +115,7 @@ const ageJSON = JSON.stringify(age);
 console.log(ageJSON);
 
 // 3.Stringify the isMarried variable
+const isMarriedJSON = JSON.stringify(isMarried);
+console.log(isMarriedJSON);
 
 // 4.Stringify the student object
