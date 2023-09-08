@@ -37,7 +37,4 @@ Final projects!!
 <h3>number generator</h3>
 <h3>nasa page</h3>
 <h3>Country Generator</h3>
-<p>Taking a three day break. </p>
-<p>Went On a Break</p>
-<p>Back like I never left</p>
-Done and Dusted
+
