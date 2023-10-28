@@ -1,3 +1,3 @@
-<!-- Manipulating The DOM -->
+## Manipulating The DOM
 
-Manipulating the DOM Questions and Answers
+<!-- Manipulating the DOM Questions and Answers -->
