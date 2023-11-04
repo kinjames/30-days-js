@@ -44,3 +44,5 @@ let yourFirstName = "John",
 
 // 10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
 console.log(`I am ${myAge} years old. \nYou are ${yourAge} years old.`);
+
+// James Kofi Myers
