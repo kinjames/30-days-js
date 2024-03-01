@@ -18,7 +18,7 @@ I will be learning React, node.js and expressjs alongside mongo db
 
 ## tailwind css
 
-I ws also able to finish the basics of javascript again, learnt new tricks since I used three different materials from different tutors to learn the basics.Each teacher had a new trick up on his sleeve to share.
+I was also able to finish the basics of javascript again, learnt new tricks since I used three different materials from different tutors to learn the basics.Each teacher had a new trick up on his sleeve to share.
 
 I learnt most of the string methods, math methods, array properties and array methods.
 
