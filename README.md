@@ -20,7 +20,6 @@ I learnt most of the string methods, math methods, array properties and array me
 
 I will continue to loops and functions tomorrow and hopefully finish objects too.
 
-almost done with JSON and Classes
 
 styled components
 Then I will continue with Regular Expressions.
