@@ -23,8 +23,6 @@ I will continue to loops and functions tomorrow and hopefully finish objects too
 almost done with JSON and Classes
 
 styled components
-
-I will do a recap on all that I have learnt on javascript.
 Then I will continue with Regular Expressions.
 
 Final projects!!
