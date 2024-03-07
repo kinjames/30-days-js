@@ -18,7 +18,6 @@ I was also able to finish the basics of javascript again, learnt new tricks sinc
 
 I learnt most of the string methods, math methods, array properties and array methods.
 
-I will continue to loops and functions tomorrow and hopefully finish objects too.
 
 
 styled components
