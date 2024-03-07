@@ -22,8 +22,6 @@ I will continue to loops and functions tomorrow and hopefully finish objects too
 
 
 styled components
-Then I will continue with Regular Expressions.
-
 Final projects!!
 <h3>number generator</h3>
 <h3>nasa page</h3>
