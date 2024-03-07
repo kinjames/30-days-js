@@ -19,7 +19,6 @@ I was also able to finish the basics of javascript again, learnt new tricks sinc
 I learnt most of the string methods, math methods, array properties and array methods.
 
 
-
 styled components
 Final projects!!
 <h3>number generator</h3>
