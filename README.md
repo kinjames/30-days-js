@@ -10,8 +10,6 @@ I took a break from the 30, days of code and I'm going to resume tomorrow!
 
 
 
-<p>I started react today, I'm using resources from net ninja's youtube channel and also using js mastery's resources for real life react projects.</p>
-
 ## tailwind css
 
 I was also able to finish the basics of javascript again, learnt new tricks since I used three different materials from different tutors to learn the basics.Each teacher had a new trick up his sleeve to share.
