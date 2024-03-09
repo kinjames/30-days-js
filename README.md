@@ -6,8 +6,6 @@ I have to complete this program in a week
 I will start with loops and then move to functions.
 
 
-I took a break from the 30, days of code and I'm going to resume tomorrow!
-
 
 
 ## tailwind css
