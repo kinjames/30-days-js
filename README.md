@@ -14,7 +14,6 @@ I was also able to finish the basics of javascript again, learnt new tricks sinc
 
 
 
-styled components
 Final projects!!
 <h3>number generator</h3>
 <h3>nasa page</h3>
