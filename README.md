@@ -4,7 +4,7 @@
 
 
 
-## tailwind css
+## tailwind css & styled Component
 I was also able to finish the basics of javascript again. css, learnt new tricks since I used three different materials from different tutors to learn the basics.Each teacher had a new trick up his sleeve to share
 
 ## Final projects!
