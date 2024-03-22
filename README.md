@@ -1,6 +1,6 @@
 # 30-days-js
 
-## This is Asabeneh's 30 Days
+## This is Asabeneh's 30 Days of
 
 
 
